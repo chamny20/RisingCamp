@@ -1,0 +1,404 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 시작 */
+#wrap {
+  height : 100%;
+}
+
+#pos_scroll {
+  height: 0;
+}
+
+#container, #header {
+  position : relative;
+  
+}
+
+.bnr_header {
+  border : 1px solid gold;
+  position: relative;
+  min-width: 1050px;
+  text-align: center;
+  line-height: 42px;
+  font-size: 14px;
+
+}
+
+.bnr_header a {
+  display: block;
+  height: 42px;
+  background-color: #5f0080;
+  color: #fff;
+}
+
+a {
+  text-decoration : none;
+  color: inherit;
+  background-color: transparent;
+}
+
+b {
+  font-weight: 700;
+}
+
+.bnr_header .bnr_arr {
+  display : inline-block;
+  width: 42px;
+  height: 42px;
+  vertical-align: top;
+}
+
+#userMenu {
+  margin: 0 auto;
+}
+
+#userMenu .menu {
+  position: relative;
+  z-index: 400;
+  float: left;
+}
+
+#userMenu .list_menu {
+  float : right;
+}
+
+#userMenu .link_menu {
+  float : left;
+  height: 37px;
+  padding: 0 12px;
+  color: #333;
+  line-height: 35px;
+  white-space: nowrap;
+}
+
+#userMenu .menu_join .link_menu {
+  float : left;
+  height: 37px;
+  padding: 0 12px;
+  line-height: 35px;
+  white-space: nowrap;
+
+}
+
+#userMenu .menu.lst .link_menu {
+  padding-right: 13px;
+}
+
+ul {
+  display : block;
+  margin-block-start : 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+div, li {
+  word-break : break-all;
+}
+
+#headerLogo {
+  position : relative;
+  width: 80%;
+  height: 63px;
+  margin: 0 auto;
+}
+
+#headerLogo .logo {
+  position: absolute;
+  left:0;
+  bottom:6px;
+  width:100%;
+  height:79px;
+  text-align:center;
+}
+
+#headerLogo .logo img {
+  width: 103px;
+  height: 79px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: top;
+  max-width:100%;
+}
+
+#headerLogo .logo .link_main {
+  display:inline-block;
+  height:79px;
+}
+
+#headerLogo .bnr_delivery {
+  position: absolute;
+  left: -1px;
+  top: -28px;
+  margin: auto;
+  height: 22px;
+}
+
+.screen_out {
+  display: block;
+  overflow: hidden;
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  font-size: 0;
+  line-height: 0;
+  text-indent: -9999px;
+}
+
+h1 {
+  display:block;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+
+#gnb .gnb_kurly {
+  position: relative;
+  z-index: 300;
+  background-color: #fff;
+  font-family : 'Noto Sans';
+  letter-spacing: -0.3px;
+}
+
+#gnb .inner_gnbkurly {
+  position: relative;
+  height: 56px;
+  margin: 0 auto;
+}
+
+#gnb .gnb_main {
+  overflow: hidden;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#gnb .gnb_main .gnb {
+  float: left;
+  width: 100%;
+}
+
+#gnb .gnb_main .menu1 a {
+  width: 148px;
+}
+
+#gnb .gnb_main .menu2 a {
+  width: 148px;
+}
+
+#gnb .gnb_main .menu3 a {
+  width:116px;
+}
+
+#gnb .gnb_main .menu4 a {
+  width:148px;
+}
+
+#gnb .gnb_main .lst a {
+  width: 116px;
+}
+
+#gnb .gnb_main .gnb a {
+  overflow: hidden;
+  float: left;
+  height: 55px;
+  padding: 16px 0 0;
+  font-size: 16px;
+  color: #333;
+  line-height: 20px;
+  text-align: center;
+}
+
+#gnb .gnb_main .gnb a .txt {
+  font-weight: 700;
+}
+
+#gnb .gnb_main .menu1 .ico {
+  background: url(https://res.kurly.com/pc/service/common/1908/ico_gnb_all_off_x2.png) no-repeat 0 0;
+  background-size: 16px 14px;
+}
+
+#gnb .gnb_main .menu1 .ico {
+  float: left;
+  width: 16px;
+  height: 14px;
+  margin: 5px 14px 0 0;
+}
+
+#gnb .gnb_main .gnb li {
+  float : left;
+}
+
+li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+#gnb .gnb_sub {
+  display: none;
+  overflow: hidden;
+  position: absolute;
+  z-index: 301;
+  left: 0;
+  top: 55px;
+  padding-top: 1px;
+}
+
+#main {
+  border-bottom: 1px solid #f7f7f7;
+  height: 1050px;
+  border : 5px solid blue;
+}
+
+#footer {
+  border : 4px solid gold;
+  height: 522px;
+  font-weight: 400;
+  letter-spacing: -.2px;
+  font-family: noto sans;
+
+}
+
+body {
+  line-height: 1;
+  letter-spacing: -.05em;
+  color: #4c4c4c;
+  font-size: 12px;
+}
+
+div {
+  border : 1px solid red;
+  display : block;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.slick-slider {
+  box-sizing: border-box;
+  user-select: none;
+  touch-action: pan-y;
+  position:relative;
+  display: block;
+}
+
+#footer .footer-top {
+  margin: 0 auto;
+  height: 419px;
+}
+
+#footer .footer_indemnification_clause {
+  background-color: #f7f7f7;
+  text-align:center;
+  padding: 19px 0 27px;
+  height: 103px;
+}
+
+
+/* #header1 {
+  border: 1px solid black;
+  height: 40px;
+
+}
+
+#header1_wrap {
+  border : 1px solid red;
+  height : 20.1px;
+  width : 1135.33px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+}
+
+.header1_content {
+  border: 1px solid blue;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+#header2 {
+  border: 1px solid black;
+  height:64px;
+
+}
+
+#header2_wrap {
+  border: 1px solid pink;
+  height: 100%;
+  width: 1135.33px;
+  margin:0 auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.header2_content1 {
+  border: 1px solid blue;
+  width:110px;
+  height:100%;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.header2_content2 {
+  border: 1px solid purple;
+  width: 951.33px;
+  height: 100%;
+} */
